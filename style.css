@@ -12,6 +12,10 @@ article {
     margin-bottom: 300px;
 }
 
+h1 {
+    color: aquamarine;
+}
+
 h3 {
     font-size: 3rem;
     margin-bottom: 0;
