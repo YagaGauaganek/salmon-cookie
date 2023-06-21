@@ -1,5 +1,6 @@
 body {
 font-family: 'Raleway', sans-serif;
+background-color: aliceblue;
 }
 
 article {
@@ -14,6 +15,8 @@ article {
 
 h1 {
     color: aquamarine;
+    align-items: center;
+
 }
 
 h3 {

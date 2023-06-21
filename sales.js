@@ -1,10 +1,10 @@
-"use string"
+"use strict"
 
 console.log("This is salmon cookie shop calculation");
 
 const container = document.getElementById("container");
 
-const hours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+const hour = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 
 console.log(hour.length);
 const seattle = {

@@ -70,4 +70,8 @@ const seattle = {
 };
 
 seattle.render();
+
+//Method and Prototype
+
+S
  
