@@ -17,18 +17,36 @@
       <nav>
         <ul>
           <li>
-            <a class="active" href="index.html">Main</a>
+            <a class="active" href="index.html">Go to Main Page</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="sales.html">Sales</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
       <main>
-        <div id="container">
+        <div class="form-container">
+        <form id="new-shop-form">
+          <fieldset>
+            <legend>Enter New Salmon Cookie Shop</legend>
+            <label for="name-input">Shop Name</label>
+            <input type="text" id="name-input" name="shopName" />
 
+            <label for="min-cust-input">Min Customers / Hour</label>
+            <input type="number" name="minCust" id="min-cust-input" />
+
+            <label for="max-cust-input">Max Customers / Hour</label>
+            <input type="number" name="maxCust" id="max-cust-input" >
+            
+            <label for="avg-cookies-input">Average cookies Sold / per customer </label>
+            <input type="number" name="avgCookies" id="avg-cookies-input" step="0.1" min="0" />
+
+            <button id="submit-button" type="submit">SUBMIT</button>
+          </fieldset>
+        </form>
         </div>
+        <div id="container"></div>
       </main>
       <footer>
 

@@ -2,11 +2,14 @@
 
 console.log("Salmon Cookie Shop - code - version 2.1")
 
+//const newShop = document.getElementById("newShop")
+
 const totalCookiesSold = 0
 const totalCookiesSoldWorldWide = 0
 const openHours = ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm"]
 
-const container = document.getElementById("container")
+const container = document.getElementById("container");
+const newShopForm = document.getElementById("new-shop-form");
 
 const h2 = document.createElement("h2");
 h2.textContent = "Sales"
@@ -38,6 +41,8 @@ const td = document.createElement("td");
     td.textContent = "Daily Location Total";
     tr.appendChild(td);
 
+const allShops = 0
+
 function Shop(shopName, minCust, maxCust, avgCookiePerCust){
 
     this.shopName =shopName;
@@ -49,7 +54,7 @@ function Shop(shopName, minCust, maxCust, avgCookiePerCust){
     this.cookiesPerHour = [];
     this.calcCookiesEachHour();
     this.totalDailyCookies = this.calcDailyCookies();
-
+    //this.pushShop();
     this.render();
 }
 
@@ -69,7 +74,6 @@ Shop.prototype.calcCookiesEachHour = function(){
 
 function randomCust(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min)
-
 }
 
 Shop.prototype.calcDailyCookies = function(){
@@ -135,3 +139,26 @@ const dubai = new Shop("dubai", 11, 38, 3.7)
 const paris = new Shop("paris", 20,38, 2.3,)
 const lima = new Shop("lima", 2, 16, 4.6,)
 hoursTotal([seattle, tokyo, dubai, paris, lima])
+
+newShopForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    //event.stopPropagation();
+
+    //console.log(event);
+for (let i = 0; i < allShops; i++){
+    allShops.render;
+}
+
+    const shopNameInput = event.target.shopName.value;
+    const minCustInput = event.target.minCust.value;
+    const maxCustInput = event.target.maxCust.value;
+    const avgCookiesInput = event.target.avgCookies.value;
+
+    const shop = new Shop(shopNameInput, minCustInput, maxCustInput, avgCookiesInput);
+        console.log(shop);    
+}
+)
+
+newShopForm.addEventListener("submit", function(){})
+
+const Chris = function(){}

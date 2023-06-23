@@ -99,7 +99,9 @@ h2 {
     border-style:inherit;
 }
 
-table, th, td {
+table, 
+th, 
+td {
     border: 1px solid teal;
     border-collapse: collapse;
     background-color: #F2D8D8;
@@ -107,7 +109,8 @@ table, th, td {
     height: auto;
 }
 
-th, td {
+th, 
+td {
     padding: .5rem;
 }
 
@@ -130,4 +133,39 @@ a:hover {
 
 #container {
     padding: 20px;
+}
+
+legend {
+    margin-bottom: 1rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid teal;
+}
+
+fieldset,
+legend {
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-size: 1.25;
+}
+
+.inline-input {
+    display: inline;
+}
+
+button[type="submit"] {
+    background-color: teal;
+    border : none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
